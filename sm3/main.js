@@ -55,8 +55,8 @@ const developers = [
      * (именно в этом месте кода)
      */
   const newDeveloper1 = {
-    name: "Test",
-    surname: "Test",
+    name: "1",
+    surname: "2",
     age: 0,
   };
 
