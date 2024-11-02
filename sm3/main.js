@@ -25,6 +25,7 @@ const developers = [
   else {
     alert("Lead: Добро пожаловать в команду!");
     alert("Lead: Поприветствуйте нового коллегу!");
+    
   }
     /**
      * Нужно переписать код ниже так, чтобы каждый сотрудник 
@@ -54,14 +55,6 @@ const developers = [
      * Добавить объект newDeveloper в массив developers
      * (именно в этом месте кода)
      */
-  const newDeveloper1 = {
-    name: "1",
-    surname: "2",
-    age: 0,
-  };
+  developers.push(newDeveloper);
 
-  developers.push(newDeveloper1);
-
-
-  
   console.log(developers);

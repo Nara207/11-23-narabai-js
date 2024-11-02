@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./public/js/modal.js" defer></script>
+  <script src="/public/js/main.js" defer></script>
   <link rel="stylesheet" href="./public/css/style.css">
-  <title>fetch()| onsubmit | async/await</title>
+  <title>doc</title>
 </head>
-
 <body>
   <div class="container">
-    <form id="productForm" method="post">
+    <form id="productForm">
       <h2>Создать продукт</h2>
       <div class="input_container">
         <label>Название</label>
@@ -25,16 +23,34 @@
         <label>Описание</label>
         <input type="text" name="description" placeholder="Описание">
       </div>
-      <button type="button">
-        Создать продукт
-      </button>
+      <button type="submit">Создать продукт</button>
     </form>
   </div>
   <script>
     const productForm = document.querySelector('#productForm');
-
-        
+    productForm.addEventListener('submit', async (event) => {
+      event.preventDefault(); 
+      
+     
+     
+      try {
+        const call = await fetch('https://fakestoreapi.com/products', {
+          method: "POST",
+          headers: {
+            'Content-Type': 'application/json' 
+          },
+          body: JSON.stringify({
+            title: productForm.elements.title.value,
+            price: productForm.elements.price.value,
+            description: productForm.elements.description.value
+          })
+        });
+          const a= await call.json(); 
+                    console.log(a); 
+      } catch (error) {
+        console.error('Error:', error); 
+      }
+    });
   </script>
 </body>
-
 </html>
