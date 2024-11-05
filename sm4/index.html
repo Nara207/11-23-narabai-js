@@ -3,7 +3,6 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="./public/js/modal.js" defer></script>
         <link rel="stylesheet" href="./public/css/style.css">
         <title>DOM</title>
       </head>      
@@ -12,13 +11,23 @@
   <button id="openModal" onclick="OpenModal()">Открыть модальное окно</button>
 
   <!-- Модальное окно -->
-  <div id="myModal" class="modal">
+  <div id="Modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">×</span>
       <p>Ок, открыли, теперь закройте</p>
     </div>
   </div>
-
+  <script>
+    function OpenModal() {
+      const modal = document.querySelector('.modal');
+      modal.classList.add('open');
+      console.log(modal);
+    }
+    function closeModal() {
+      const modal = document.querySelector(".modal");
+      modal.classList.remove('open');
+    }
+  </script>
 
 
 <p class="counter">0</p>
@@ -38,7 +47,7 @@
   <div class="wrapper">
   </div>
   <script>
-function clearHeadlines() {
+    function clearHeadlines() {
       const wrapper = document.querySelector('.wrapper');
       wrapper.innerHTML= null;
     }
