@@ -25,7 +25,8 @@ const developers = [
   else {
     alert("Lead: Добро пожаловать в команду!");
     alert("Lead: Поприветствуйте нового коллегу!");
-    
+    developers.map(sayHello);
+    developers.push(newDeveloper);
   }
     /**
      * Нужно переписать код ниже так, чтобы каждый сотрудник 
@@ -41,7 +42,7 @@ const developers = [
     alert(`${object.name}: Привет!`)
   }
 
-  developers.map(sayHello);
+  
 
     // developers.map(developers => {
     //   alert(${developers:name} : 'Привет!' )
@@ -55,6 +56,6 @@ const developers = [
      * Добавить объект newDeveloper в массив developers
      * (именно в этом месте кода)
      */
-  developers.push(newDeveloper);
+  
 
   console.log(developers);

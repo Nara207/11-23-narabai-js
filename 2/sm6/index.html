@@ -1,82 +1,263 @@
-
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="public/css/style.css">
-  <script src="public/js/main.js" defer></script>
-  <title>Billionaires Clones::Profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/js/main.js" defer ></script>
+    <title>Telegram</title>
 </head>
-
+    
+  
 <body>
-  <header class="container--full">
-    <h1 class="logotype">Billionaires Clones</h1>
-    <button class="burger__button" onclick="triggerBurger(event)">
-      <img src="public/images/icons/menu.svg" alt="icon">
-    </button>
+  <header>
+    <div class="container-f">
+      <div class="container">
+        <div class="header-content">
+          <h1>Telegram</h1>
+          <div class="burger" onclick="openMenu()">
+            
+            <img src="public/image/icons8-menu (1).svg" alt="">
+            
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
-
-  <main>
-    <div class="burger">
-      <div class="container--full burger__content">
+  <section class="menu">
+    <div class="container-f">
+      <div class="container">
+        <div class="closeBurger" onclick="closeMenu()" >
+            <img src="public/image/icons8-close-60.svg" alt="">
+        </div>
         <ul class="burger__nav-list">
           <li>
             <a href="#">
-              Main page
+              Поиск
             </a>
           </li>
           <li>
             <a href="#">
-              Explore
+              Настройки
             </a>
           </li>
           <li>
             <a href="#">
-              Search
+              Главная страница
             </a>
           </li>
         </ul>
-      </div>
     </div>
+    </div>
+  </section>
 
-    <section class="profile">
-      <div class="container profile__content">
-        <h1>Profile</h1>
-        <div class="profile__item">
-          <div class="profile__info">
-            <div class="avatar">
-              <img class="avatar__inner"
-                src="https://cdn.forbes.ru/files/forbes_import/sn/snimok-ekrana-2016-04-13-v-18.23.36.jpg" alt="avatar">
-            </div>
-            <div>
-              <p>Pavel Durov</p>
-              <p>40 y.o.</p>
-            </div>
-          </div>
-        </div>
-        <div class="profile__item danger-zone">
-          <h2>Danger zone</h2>
-          <button class="danger" onclick="openModal()">
-            <img src="public/images/icons/delete_forever.svg" alt="icon">
-            <span>Delete profile</span>
+  <section >
+    <div class="container">
+      <aside class="pannel" onmouseenter="openPannel()" onmouseleave="closePannel()">
+        <h1 class="pannel__logotype">WEB</h1>
+        <ul class="pannel__nav-list">
+          <li>
+            <button class="light selected">
+              <p>Личное</p>
+            </button>
+          </li>
+          <li>
+            <button class="light">
+              <p>Настройки</p>
+            </button>
+          </li>
+        </ul>
+      </aside>
+      
+      <div class="content">
+        <div class="prof-and-del">
+          <h1>The devil</h1>
+          <button id = "delete-profile"  onclick="openModal()">
+            <img src="public/image/icons8-delete (1).svg" alt="" class="del"> 
           </button>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <div id="myModal" class="modal">
-    <div class="modal__content">
-      <span class="modal__close" onclick="closeModal()">&#x2715;</span>
-      <h3>Delete account forever?</h3>
-      <div class="modal__buttons">
-        <button onclick="closeModal()">Cancel</button>
-        <button class="danger outline" onclick="deleteUser(event, '5', 'e#J$#IFE3u423ef')">Delete</button>
+          <div class="profile-content">
+              <img src="public/image/avatar.jpg" alt="" class="avatar"> 
+          </div>
       </div>
     </div>
-  </div>
-</body>
+  </section>
 
+  <section class="container-1">
+    <h1>О себе</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum sequi quas adipisci! Porro beatae harum, deserunt
+      adipisci quos pariatur quas at ratione, inventore debitis voluptates eligendi praesentium eaque accusamus fugiat.
+      A totam tenetur rerum. Eveniet cumque eius excepturi omnis ab ipsum adipisci ea maiores incidunt enim tenetur
+      mollitia possimus sint cupiditate labore dolore error voluptate rem, similique aliquam molestias pariatur?
+      Quaerat dolores, recusandae debitis esse hic provident ea at nostrum nobis iusto eveniet ratione explicabo
+      inventore fugiat? Iure exercitationem eius aperiam quam perferendis odit, aspernatur nulla sed autem beatae
+      accusamus.
+      Aliquam earum consectetur aut possimus repellat nemo ad laborum quas, numquam labore dolorum ipsam dignissimos
+      eligendi pariatur quisquam? Velit officia saepe recusandae, perferendis delectus dolorem repudiandae porro?
+      Asperiores, explicabo eveniet.
+      Officiis odit minus, rerum consequuntur reprehenderit cumque placeat veritatis possimus harum reiciendis labore?
+      Quos mollitia, asperiores non aut itaque, illum, necessitatibus provident distinctio voluptate nemo unde
+      reiciendis esse iusto nostrum?
+      Laborum, dignissimos at eligendi fugit vitae hic ut neque accusamus! Cumque necessitatibus amet neque, consectetur
+      officia harum eligendi molestias laboriosam incidunt quam, iure expedita culpa delectus. Quibusdam, consequuntur.
+      Cum, deleniti.
+      Ipsum eius non, distinctio voluptatum laborum iure laboriosam velit, nam animi odit, culpa voluptatem temporibus
+      dignissimos error corrupti. Assumenda, harum voluptatibus maiores rem consequatur libero fuga sapiente ipsum
+      temporibus quo!
+      Accusamus aut, eum incidunt a harum id perferendis dolor quos voluptas ipsa sed porro saepe eius accusantium,
+      veniam facere maxime animi quibusdam fugiat aperiam dolorum quod nam? Sint, quibusdam labore!
+      Qui officia illum laudantium accusantium ad, et reiciendis earum unde laborum voluptatibus quasi vel libero
+      aspernatur veritatis minus impedit quia numquam sit at beatae necessitatibus corrupti, vitae, ea eos. Facilis?
+      Laborum nemo quo debitis voluptas quaerat saepe dolore velit, earum ratione doloremque hic. Expedita consectetur
+      tempore iusto, maiores, ex exercitationem asperiores harum ad perspiciatis voluptatum, ea eaque quod dolor aut!
+      Provident qui libero totam, labore assumenda debitis facere harum ducimus accusamus vero tenetur quasi architecto
+      fugiat dicta minima laboriosam nemo aliquid dolorem tempore aut? Debitis cupiditate voluptates sint pariatur
+      libero.
+      Alias aperiam commodi illo expedita voluptatem? Culpa quasi eligendi facere, dolores cumque aut provident quaerat
+      beatae, dolorum deserunt nemo repellendus vero delectus mollitia accusamus enim laboriosam distinctio fugit fuga
+      voluptatum?
+      Ducimus eos minus, ex nemo voluptate vero accusamus in, asperiores impedit quia cumque vitae dicta sed omnis
+      voluptates reprehenderit nam quasi adipisci placeat fugit amet corporis nisi sunt laborum. Eveniet.
+      Odio mollitia repellendus officia esse, numquam aspernatur in atque, recusandae necessitatibus consectetur ex
+      possimus? Numquam amet architecto doloremque molestiae, atque fugit repudiandae qui. Soluta neque quaerat ipsam,
+      vero dolor odio?
+      Fugiat, deserunt officia molestias praesentium voluptatem repudiandae consequuntur ad ipsam adipisci eligendi ab.
+      Saepe cupiditate reprehenderit sed assumenda quibusdam, quae architecto totam exercitationem neque! Possimus velit
+      explicabo distinctio totam ex.
+      Error ratione quisquam rerum aperiam laboriosam quia eos ex omnis, qui nihil sunt facilis iusto ipsa, sequi
+      perspiciatis facere doloribus unde officia. Quas ex, sed eveniet consectetur laborum voluptates eos.
+      Tenetur repellat porro aliquam, quidem deleniti labore nemo a nihil adipisci laudantium, accusantium id culpa
+      eligendi accusamus officiis totam expedita suscipit quae dicta eius, atque iure soluta. Aliquid, rem ipsum.
+      Eius unde veniam debitis minus expedita sint corporis, nesciunt adipisci facilis animi delectus vitae dolores
+      assumenda dicta accusamus nam, consectetur tempore eveniet? Commodi, suscipit odit aspernatur delectus amet
+      aperiam esse?
+      Quis, excepturi at illo aspernatur aut doloribus adipisci rerum obcaecati impedit, ex error deserunt repudiandae
+      deleniti, magnam cum dolorum magni praesentium! Magni recusandae tenetur consequuntur assumenda aspernatur nam!
+      Eligendi, harum?
+      Laboriosam, quis ducimus magnam corrupti dicta facere odio, vero praesentium repudiandae modi sed? Quae unde
+      quibusdam quas commodi! Modi maxime laudantium pariatur facere vitae dicta hic, id minus architecto asperiores.
+      Nihil unde praesentium vel veniam recusandae enim, asperiores nobis ipsa autem voluptatum corrupti excepturi. Ipsa
+      nam tempora enim quos. Odit officia itaque adipisci repellendus, possimus atque magni placeat ad impedit.
+      Esse, a odio totam quisquam ad ipsam eius asperiores, provident soluta sunt vitae itaque officiis aliquam at non
+      placeat quod natus nostrum sequi quo tenetur? Quo asperiores dolor aliquam esse?
+      Tempora, quisquam! Beatae dicta sapiente fugiat temporibus repellat ipsa illo sed. Ad, labore! Debitis porro
+      consectetur delectus dignissimos, aperiam tempore qui quas voluptatem at placeat dolore quibusdam similique magnam
+      atque.
+      Iste, temporibus adipisci excepturi facilis voluptates laborum quod sunt eligendi. At accusamus illo nesciunt
+      animi, debitis magnam quo enim expedita doloribus cumque voluptates minima, ipsa, velit veritatis dicta impedit
+      corrupti.
+      Aspernatur, animi soluta facilis corrupti enim repudiandae illo alias quidem maiores molestias fugiat, quo iste
+      vitae fuga dicta dolorem magnam optio quibusdam, reiciendis sapiente. Fugiat ex odit vitae aspernatur
+      consequuntur.
+      Sit rerum officiis veniam neque rem officia, reiciendis sint corrupti ipsa fugit tempora nihil minus ut, minima
+      illo quod ad nobis magnam et esse repellat libero iusto qui. Asperiores, qui.
+      Consectetur facere eaque deleniti magnam voluptates facilis similique accusamus qui iure, laborum non nobis, nam,
+      blanditiis harum commodi saepe suscipit est perferendis vel delectus. Quia explicabo quam ad illo animi.
+      Sit dolores alias temporibus voluptatibus possimus modi eligendi! Iste ratione aspernatur temporibus id ea alias
+      esse odio ex sunt tenetur facilis, accusamus laboriosam, molestias quo cum possimus minus? Distinctio, eveniet.
+      Cupiditate ea nostrum ab, voluptates rerum laudantium magnam architecto, assumenda quae deleniti consequuntur modi
+      quis aspernatur pariatur. Exercitationem cumque, architecto laboriosam nisi aspernatur officia unde soluta porro
+      sapiente, aliquam maiores.
+      Placeat sint distinctio dolorum, facilis rerum magni! Aperiam maxime nobis veniam! Rem veniam fugit ratione
+      pariatur accusantium placeat consequatur, nesciunt perferendis error alias magni voluptates consectetur
+      repudiandae itaque nobis vero.
+      Doloribus quisquam ipsa saepe ab totam doloremque sunt sit voluptas eveniet assumenda. Cumque dolorem laborum qui!
+      Quibusdam voluptatum recusandae ducimus illo ut corporis, harum veritatis sunt eius quo dicta quod?
+      Sint eaque omnis earum, cumque eveniet nobis voluptatem et at? Perspiciatis exercitationem illo id pariatur eum
+      dolorem dolor nihil est dolorum a earum, minus maiores obcaecati esse distinctio similique quod?
+      Quia neque laboriosam doloribus deleniti praesentium voluptatem dignissimos laborum, earum debitis. Ea libero
+      neque error tempora, quam id eaque, eius impedit illum facilis fugit dolores vitae repudiandae deleniti at
+      laboriosam!
+      Accusantium quisquam ipsam qui nisi aperiam illum facilis tempore amet, aut recusandae iusto dolores rem quidem
+      ratione necessitatibus, fugit sequi exercitationem nihil asperiores? Dolor deserunt tempora, aliquam reiciendis
+      assumenda a!
+      Odio recusandae maiores, tempora quis odit laboriosam dolorem fugiat praesentium architecto cumque rem qui
+      necessitatibus illo magni voluptate tenetur fugit modi, ipsum repudiandae. Dolores voluptatem praesentium
+      laudantium numquam nihil quidem!
+      Laudantium ut quasi possimus libero cupiditate odio impedit incidunt quam eveniet culpa beatae laborum, tempora
+      omnis debitis animi aliquid perspiciatis molestias, nesciunt eaque quia repellendus delectus recusandae! Aliquid,
+      et illum?
+      Molestias vero repudiandae qui non laboriosam corrupti commodi voluptatem debitis natus aperiam quisquam
+      aspernatur magnam quibusdam dignissimos obcaecati, eveniet amet! Voluptatibus molestiae eaque itaque molestias,
+      numquam nostrum facilis vitae et?
+      Iste, quod nisi. Totam doloremque eaque porro voluptatum sit fuga sapiente debitis architecto explicabo? Facilis
+      sit eius, deleniti atque libero ipsum iste necessitatibus autem quod, dicta ea dolore nemo ut.
+      Sequi consequuntur nesciunt fuga, maiores officia sed recusandae error voluptatibus ut nemo reiciendis beatae
+      fugiat minima vero est blanditiis aliquam ducimus ex quisquam optio eum possimus esse modi! Ex, dolores!
+      Facere magnam vel nisi. Dolorem rem illo eos voluptates molestias exercitationem officia veniam placeat aliquam,
+      nihil sint fugit earum voluptatem! Rerum dignissimos corrupti quia animi similique eveniet dolore magni sequi!
+      Maiores illum incidunt nulla veniam atque! Voluptate dolores laborum animi neque. Doloremque, expedita explicabo.
+      Repellendus neque, excepturi nesciunt atque at minima dolorum quod in architecto enim amet, voluptate perferendis
+      cupiditate.
+      Sunt commodi est aut quod nesciunt eveniet voluptates asperiores voluptatibus ipsum, expedita delectus cum
+      exercitationem placeat soluta pariatur tenetur illo culpa consequuntur. Aliquid dolorum fuga praesentium iste
+      nihil eum nostrum.
+      Officiis omnis totam voluptatem, dolor, inventore reprehenderit alias sed at quos est quidem iusto, ipsa
+      consectetur molestiae tempora? Ex deleniti, ullam aperiam nobis exercitationem maiores dolorum qui dolor cumque
+      quaerat.
+      Porro beatae laudantium, cupiditate quod aut aliquam, error, delectus quam reiciendis reprehenderit repudiandae
+      facilis! Tempore, dicta. Totam voluptate porro vero debitis repellendus, voluptatem quidem omnis harum, ipsa,
+      eaque quos adipisci?
+      Quisquam cum quia porro similique saepe enim nemo nostrum deserunt, rerum accusamus eligendi odio soluta molestias
+      et reprehenderit animi totam voluptates! Necessitatibus fuga officiis laborum dignissimos esse maiores reiciendis
+      consectetur.
+      Facere praesentium assumenda totam ut nulla tenetur quae veniam mollitia sunt, esse a ducimus, repellat libero
+      quis blanditiis commodi necessitatibus veritatis numquam repudiandae possimus distinctio officia. Qui similique
+      reprehenderit nihil?
+      Ea, beatae odit modi ipsa cupiditate exercitationem eaque repellat deleniti consequatur nam fuga dolor minima
+      quasi est reprehenderit culpa recusandae dicta quaerat! Optio minus veniam consequuntur, blanditiis ex voluptate
+      in?
+      Rem eligendi voluptatem vero quam commodi laborum veritatis distinctio sequi qui fuga repudiandae optio, culpa
+      atque voluptate ut. Tempora cupiditate ullam laudantium. Atque suscipit odit eum adipisci numquam expedita
+      deserunt!
+      Quos, rerum inventore et error eligendi voluptas non. Similique sed ratione veniam exercitationem sapiente
+      recusandae, officiis minus nobis fugiat. Deleniti quas numquam reprehenderit similique tempora quia aut velit sunt
+      totam?
+      Recusandae, atque labore. Nesciunt ea illum quos ipsa aperiam sint minima recusandae possimus eveniet alias porro
+      doloremque, optio, at non est cum sit ipsum sapiente in, soluta corporis! Totam, non!</p>
+  </section>
+
+  <section class="container-1" id="features">
+    <h1>Цели</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum at quos ipsa, qui ullam expedita labore tempore
+      unde numquam magnam vel tempora! Voluptates minus soluta suscipit veniam aperiam, dicta nam?Lorem ipsum dolor sit
+      amet consectetur, adipisicing elit. Ipsa facilis rem, excepturi qui commodi doloribus voluptas nesciunt quaerat
+      atque cumque iure libero maiores! Molestiae voluptate eius commodi dolores laborum totam.
+      Voluptatem, iure odio enim ut doloremque sunt perferendis voluptates a dolorum dolorem illo sequi eaque odit non
+      animi repellat quisquam corrupti vero cumque officia minus dolores id et rem! Ducimus?
+      Animi quod asperiores totam quidem atque provident enim ipsa eligendi earum a obcaecati incidunt modi sint laborum
+      magnam recusandae voluptas repellendus officia commodi illo itaque, voluptates odio natus corporis. Dolor?
+      Hic eius aut repudiandae explicabo vitae! Minima dolorum consectetur officia fugiat inventore laudantium! Eligendi
+      recusandae ullam fugiat rerum praesentium, adipisci expedita consequatur. Soluta incidunt tempora veritatis
+      excepturi, possimus animi consectetur?
+      Minus, porro expedita enim animi quas, aspernatur consequuntur delectus eos nam iusto alias dolorum nobis nisi
+      sunt eveniet! Nesciunt ratione illo eius est veniam deserunt optio, sunt molestias hic labore?</p>
+      <br>
+      <br>
+      <br>
+  </section>
+
+  <dialog id="modal-1">
+    <span class="close">
+      <img src="public/image/icons8-close-60.svg" alt="">
+    </span>
+    <h2>Следите за постами!</h2>
+    <p>Подождите несколько секунд: <span id="counter"></span></p>
+
+      <form onsubmit="sendEmail(event)" class="subscribe">
+        <input type="email" name="email">
+        <button type="submit" class="subs">Подписаться</button>
+      </form>
+  </dialog>
+
+    <div id="myModal" class="modal">
+      <div class="modal__content">
+        <h3>Удалить профиль?</h3>
+        <div class="modal__buttons">
+          <button class="danger outline" onclick=" deleteProfile(event, '1', 'e#J$#IFE3u423ef')">Да</button>
+          <button onclick="closeModal()">Нет</button>
+        </div>
+      </div>
+    </div>
+</body>
 </html>
